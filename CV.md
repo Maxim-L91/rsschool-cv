@@ -38,4 +38,4 @@
 
 ### Мои проекты
 
-[**CV**](https://maxim-l91.github.io/rsschool-cv/cv) - Мой первый проект.
+[**CV**](https://maxim-l91.github.io/rsschool-cv/CV) - Мой первый проект.
