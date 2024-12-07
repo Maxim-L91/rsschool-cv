@@ -1,1 +1,1 @@
-[Проект CV](https://Maxim-L91.github.io/rsschool-cv/cv)
+[Проект CV](https://maxim-l91.github.io/rsschool-cv/cv)
