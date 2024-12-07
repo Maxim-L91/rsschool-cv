@@ -2,7 +2,7 @@
 
 ## Обо мне
 
-![(https://web.telegram.org/832d9b32-cdb4-42b3-b487-d4d292edb23b)]
+![Мой аватар](https://web.telegram.org/832d9b32-cdb4-42b3-b487-d4d292edb23b)
 
 Лощинин Максим. Начинающий Frontend разработчик.
 
