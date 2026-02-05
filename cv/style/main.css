@@ -1,4 +1,51 @@
-/* Globals */
+/* ========== Fonts ========== */
+
+/* ========== Roboto ========== */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/roboto/Roboto-Regular.eot');
+  src: url('../assets/fonts/roboto/Roboto-Regular.eot?#iefix') 
+        format('embedded-opentype'),
+      url('../assets/fonts/roboto/Roboto-Regular.woff2') 
+        format('woff2'),
+      url('../assets/fonts/roboto/Roboto-Regular.woff') 
+        format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/roboto/Roboto-Medium.eot');
+  src: url('../assets/fonts/roboto/Roboto-Medium.eot?#iefix') 
+        format('embedded-opentype'),
+      url('../assets/fonts/roboto/Roboto-Medium.woff2') 
+        format('woff2'),
+      url('../assets/fonts/roboto/Roboto-Medium.woff') 
+        format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ========== Comforta ========== */
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('../assets/fonts/comforta/Comfortaa-Medium.eot');
+  src: url('../assets/fonts/comforta/Comfortaa-Medium.eot?#iefix') 
+        format('embedded-opentype'),
+      url('../assets/fonts/comforta/Comfortaa-Medium.woff2') 
+        format('woff2'),
+      url('../assets/fonts/comforta/Comfortaa-Medium.woff') 
+        format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ========== Globals ========== */
 
 a {
   text-decoration: none;
@@ -11,7 +58,9 @@ ul {
 }
 
 body {
+  font-family: 'Roboto';
   font-size: 18px;
+  font-weight: 500;
   color: #E2E6EE;
   background-color: #2E2E48;
 }
