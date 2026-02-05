@@ -1,3 +1,17 @@
-h1 {
-  color: red;
+/* Globals */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  color: #E2E6EE;
+  background-color: #2E2E48;
 }
