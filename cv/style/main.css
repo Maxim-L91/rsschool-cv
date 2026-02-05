@@ -64,3 +64,29 @@ body {
   color: #E2E6EE;
   background-color: #2E2E48;
 }
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  min-height: 100px;
+  padding: 10px 0;
+}
+
+.header-inner__logo {
+  display: inline-block;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 25%;
+  background-color: #36363f;
+}
+
+.header-inner__menu {
+  display: inline-block;
+}
