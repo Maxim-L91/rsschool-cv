@@ -129,15 +129,45 @@ body {
 
 .header-inner__lang {
   margin-right: 70px;
-  padding: 10px 10px;
+  padding: 10px 20px 10px 10px;
   border: none;
   border-radius: 10px;
   text-transform: uppercase;
   color: inherit;
   background-color: #2d3366;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
   cursor: pointer;
 }
+
+.header-inner__select {
+  position: relative;
+  display: inline-block;
+}
+
+.header-inner__select::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  display: block;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10.4px 6px 0 6px;
+  border-color: #98a1f1 transparent transparent transparent;
+}
+
+/* fix for IE */
+.header-inner__lang::-ms-expand {
+  display: none;
+}
+
 
 .header-inner__list {
   white-space: normal;
