@@ -88,12 +88,6 @@ body {
   min-height: 100px;
 }
 
-.header-inner__logo,
-.header-inner__right {
-  display: table-cell;
-  vertical-align: middle;
-}
-
 .logo {
   display: inline-block;
   width: 120px;
@@ -110,64 +104,23 @@ body {
   transition: 0.4s;
 }
 
+.header-inner__logo,
+.header-inner__right {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .header-inner__right {
   max-width: 100%;
   white-space: normal;
   text-align: right;
 }
 
-.header-inner__menu,
-.header-inner__link {
-  display: table-cell;
-  vertical-align: middle;
-}
-
 .header-inner__menu {
   display: inline-block;
-  margin-right: 70px;
+  vertical-align: middle;
+  margin-right: 30px;
 }
-
-.header-inner__lang {
-  margin-right: 70px;
-  padding: 10px 20px 10px 10px;
-  border: none;
-  border-radius: 10px;
-  text-transform: uppercase;
-  color: inherit;
-  background-color: #2d3366;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  cursor: pointer;
-}
-
-.header-inner__select {
-  position: relative;
-  display: inline-block;
-}
-
-.header-inner__select::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 42px;
-  transform: translateY(-50%);
-  display: block;
-  width: 10px;
-  height: 10px;
-  pointer-events: none;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10.4px 6px 0 6px;
-  border-color: #98a1f1 transparent transparent transparent;
-}
-
-/* fix for IE */
-.header-inner__lang::-ms-expand {
-  display: none;
-}
-
 
 .header-inner__list {
   white-space: normal;
@@ -176,7 +129,6 @@ body {
 .header-inner__item {
   display: inline-block;
   vertical-align: middle;
-  white-space: nowrap;
   position: relative;
   margin-right: 24px;
 }
@@ -215,13 +167,54 @@ body {
   display: none;
 }
 
-.header-inner__link svg {
+.header-inner__lang {
+  padding: 12px 20px 12px 10px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: inherit;
+  background-color: #2d3366;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.header-inner__select {
   display: inline-block;
+  position: relative;
+}
+
+.header-inner__select::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  display: block;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 6px 0 6px;
+  border-color: #98a1f1 transparent transparent transparent;
+}
+
+/* fix for IE */
+.header-inner__lang::-ms-expand {
+  display: none;
+}
+
+.header-inner__link svg {
   vertical-align: -6px;
 }
 
 .contact-button {
   display: inline-block;
+  vertical-align: middle;
+  margin-left: 30px;
   padding: 12px 20px;
   border-radius: 10px;
   white-space: nowrap;
