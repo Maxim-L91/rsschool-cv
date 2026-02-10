@@ -2,28 +2,28 @@
 
 /* ========== Roboto ========== */
 @font-face {
-  font-family: 'Roboto';
-  src: url('../assets/fonts/roboto/Roboto-Regular.eot');
-  src: url('../assets/fonts/roboto/Roboto-Regular.eot?#iefix') 
-        format('embedded-opentype'),
-      url('../assets/fonts/roboto/Roboto-Regular.woff2') 
-        format('woff2'),
-      url('../assets/fonts/roboto/Roboto-Regular.woff') 
-        format('woff');
+  font-family: "Roboto";
+  src: url("../assets/fonts/roboto/Roboto-Regular.eot");
+  src: url("../assets/fonts/roboto/Roboto-Regular.eot?#iefix") 
+        format("embedded-opentype"),
+      url("../assets/fonts/roboto/Roboto-Regular.woff2") 
+        format("woff2"),
+      url("../assets/fonts/roboto/Roboto-Regular.woff") 
+        format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../assets/fonts/roboto/Roboto-Medium.eot');
-  src: url('../assets/fonts/roboto/Roboto-Medium.eot?#iefix') 
-        format('embedded-opentype'),
-      url('../assets/fonts/roboto/Roboto-Medium.woff2') 
-        format('woff2'),
-      url('../assets/fonts/roboto/Roboto-Medium.woff') 
-        format('woff');
+  font-family: "Roboto";
+  src: url("../assets/fonts/roboto/Roboto-Medium.eot");
+  src: url("../assets/fonts/roboto/Roboto-Medium.eot?#iefix") 
+        format("embedded-opentype"),
+      url("../assets/fonts/roboto/Roboto-Medium.woff2") 
+        format("woff2"),
+      url("../assets/fonts/roboto/Roboto-Medium.woff") 
+        format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -32,14 +32,14 @@
 /* ========== Comforta ========== */
 
 @font-face {
-  font-family: 'Comfortaa';
-  src: url('../assets/fonts/comforta/Comfortaa-Medium.eot');
-  src: url('../assets/fonts/comforta/Comfortaa-Medium.eot?#iefix') 
-        format('embedded-opentype'),
-      url('../assets/fonts/comforta/Comfortaa-Medium.woff2') 
-        format('woff2'),
-      url('../assets/fonts/comforta/Comfortaa-Medium.woff') 
-        format('woff');
+  font-family: "Comfortaa";
+  src: url("../assets/fonts/comforta/Comfortaa-Medium.eot");
+  src: url("../assets/fonts/comforta/Comfortaa-Medium.eot?#iefix") 
+        format("embedded-opentype"),
+      url("../assets/fonts/comforta/Comfortaa-Medium.woff2") 
+        format("woff2"),
+      url("../assets/fonts/comforta/Comfortaa-Medium.woff") 
+        format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -52,17 +52,17 @@
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 ul {
-  list-style-type: none;
   padding: 0;
+  list-style-type: none;
 }
 
 body {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 18px;
   font-weight: 500;
   color: #E2E6EE;
@@ -78,8 +78,8 @@ body {
 /* ========== Header ========== */
 
 .header {
-  background-color: #242449;
   padding: 10px 0;
+  background-color: #242449;
 }
 
 .header-inner {
@@ -118,8 +118,8 @@ body {
 
 .header-inner__menu {
   display: inline-block;
-  vertical-align: middle;
   margin-right: 30px;
+  vertical-align: middle;
 }
 
 .header-inner__list {
@@ -127,10 +127,10 @@ body {
 }
 
 .header-inner__item {
-  display: inline-block;
-  vertical-align: middle;
   position: relative;
+  display: inline-block;
   margin-right: 24px;
+  vertical-align: middle;
 }
 
 .header-inner__item:hover {
@@ -145,10 +145,10 @@ body {
   bottom: -10px;
   width: 100%;
   height: 2px;
-  background-color: #98a1f1;
   transform: translateX(-50%) scaleX(0);
   transition: transform 0.4s ease, opacity 0.20s ease 0.4s;
   transform-origin: center;
+  background-color: #98a1f1;
   pointer-events: none;
   opacity: 0;
 }
@@ -181,8 +181,8 @@ body {
 }
 
 .header-inner__select {
-  display: inline-block;
   position: relative;
+  display: inline-block;
 }
 
 .header-inner__select::after {
@@ -190,11 +190,12 @@ body {
   position: absolute;
   top: 50%;
   left: 42px;
-  transform: translateY(-50%);
   display: block;
   width: 10px;
   height: 10px;
+  transform: translateY(-50%);
   pointer-events: none;
+  /* Создание треугольника */
   width: 0;
   height: 0;
   border-style: solid;
@@ -213,10 +214,10 @@ body {
 
 .contact-button {
   display: inline-block;
-  vertical-align: middle;
   margin-left: 30px;
   padding: 12px 20px;
   border-radius: 10px;
+  vertical-align: middle;
   white-space: nowrap;
   background-color: #2d3366;
   transition: 0.4s;
