@@ -51,6 +51,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 a {
   color: inherit;
   text-decoration: none;
@@ -64,7 +69,7 @@ ul {
 body {
   font-family: "Roboto";
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   color: #e2e6ee;
   background-color: #2e2e48;
 }
@@ -188,7 +193,7 @@ body {
 }
 
 .header-inner__lang {
-  padding: 12px 20px 12px 10px;
+  padding: 12px 28px 12px 10px;
   border: 3px solid #2d3366;
   border-radius: 10px;
   text-transform: uppercase;
@@ -209,7 +214,7 @@ body {
   content: "";
   position: absolute;
   top: 50%;
-  left: 42px;
+  left: 55px;
   display: block;
   width: 10px;
   height: 10px;
@@ -234,7 +239,7 @@ body {
   transition: all 0.4s;
 }
 
-.header-inner__link svg {
+.header-inner__button svg {
   vertical-align: -6px;
 }
 
@@ -291,9 +296,12 @@ body {
 
 .first-screen {
   position: relative;
+  padding: 20px 0;
+}
+
+.first-screen__inner {
   display: table;
   width: 100%;
-  padding: 20px 0;
 }
 
 .first-screen__description,
@@ -314,7 +322,6 @@ body {
   font-size: 32px;
   letter-spacing: 3px;
   margin-top: 20px;
-  margin-bottom: 40px;
 }
 
 .first-screen__text span {
@@ -409,7 +416,7 @@ body {
 
 .first-screen__arrow {
   position: absolute;
-  display: inline-block;
+  margin: 0 auto;
   left: 50%;
   bottom: -10%;
   width: 40px;
@@ -425,4 +432,116 @@ body {
 .first-screen__arrow svg:hover {
   fill: #98a1f1;
   transition: 0.4s;
+}
+
+/* ========== Project ========== */
+
+.project {
+  margin-top: 140px;
+  padding: 20px 0;
+  background-color: #ced3ff;
+}
+
+.project-title {
+  text-align: center;
+  font-family: "Comfortaa";
+  font-size: 40px;
+  font-weight: 500;
+  color: #47516b;
+}
+
+/* ========== ClearFix ========== */
+
+.project-list::before,
+.project-list::after {
+  content: "";
+  display: table;
+}
+
+.project-list::after {
+  clear: both;
+}
+
+.project-list {
+  clear: both;
+  *zoom: 1;
+}
+
+.project-list__item {
+  float: left;
+  max-width: 31%;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: #98a1f1;
+}
+
+.project-list__item:nth-child(n+4) {
+  margin-top: 14px;
+}
+
+.project-card__img img {
+  width: 100%;
+}
+
+.project-card__desc {
+  padding: 20px;
+}
+
+.project-card__title {
+  font-family: "Comfortaa";
+  font-weight: 500;
+  margin-top: 0;
+  color: #242449;
+}
+
+.project-card__copy,
+.project-card__list {
+  color: #47516b;
+}
+
+.project-card__item + .project-card__item {
+  margin-top: 10px;
+}
+
+.project-card__item {
+  position: relative;
+}
+
+.project-card__item::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #47516b;
+}
+
+.project-card__item span {
+  color: #242449;
+}
+
+.project-card__button {
+  margin-top: 20px;
+  border: 2px solid #242449;
+}
+
+.project-card__button:hover {
+  color: #242449;
+}
+
+.project-subtitle {
+  font-family: "Comfortaa";
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 70px;
+  color: #242449;
+}
+
+.project-example {
+  max-width: 50%;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #2e2e48;
 }
