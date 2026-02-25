@@ -97,6 +97,38 @@ body {
   transition: all 0.4s;
 }
 
+.hover-link {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.hover-link:hover {
+  color: #98a1f1;
+  transition: all 0.3s;
+}
+
+.hover-link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 100%;
+  height: 2px;
+  transform: translateX(-50%) scaleX(0);
+  transition: transform 0.4s ease, opacity 0.20s ease 0.4s;
+  transform-origin: center;
+  background-color: #98a1f1;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.hover-link:hover::after {
+  transform: translateX(-50%) scaleX(1);
+  transition: transform 0.4s ease, opacity 0.20s ease;
+  opacity: 1;
+}
+
 .title {
   text-align: center;
   font-family: "Comfortaa";
@@ -159,40 +191,11 @@ body {
 }
 
 .header-inner__item {
-  position: relative;
-  display: inline-block;
   margin-right: 24px;
-  vertical-align: middle;
-}
-
-.header-inner__item:hover {
-  color: #98a1f1;
-  transition: all 0.3s;
-}
-
-.header-inner__item::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: -10px;
-  width: 100%;
-  height: 2px;
-  transform: translateX(-50%) scaleX(0);
-  transition: transform 0.4s ease, opacity 0.20s ease 0.4s;
-  transform-origin: center;
-  background-color: #98a1f1;
-  pointer-events: none;
-  opacity: 0;
 }
 
 .header-inner__item:last-child {
   margin: 0;
-}
-
-.header-inner__item:hover::after {
-  transform: translateX(-50%) scaleX(1);
-  transition: transform 0.4s ease, opacity 0.20s ease;
-  opacity: 1;
 }
 
 .header-inner__cta::after {
@@ -506,6 +509,12 @@ body {
   color: #47516b;
 }
 
+.project-card__subtitle {
+  font-family: "Comfortaa";
+  font-weight: 500;
+  color: #242449;
+}
+
 .project-card__item + .project-card__item {
   margin-top: 10px;
 }
@@ -624,10 +633,37 @@ body {
 
 .qualities-case__list {
   display: inline-block;
-  padding-left: 60px;
+  padding-left: 20px;
   opacity: 0.8;
 }
 
 .qualities-case__item + .qualities-case__item {
   margin-top: 10px;
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #383858;
+}
+
+.footer-inner {
+  display: table;
+  width: 100%;
+  min-height: 100px;
+}
+
+.footer-inner__link,
+.footer-inner__date,
+.footer-inner__link-school {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.footer-inner__date {
+  text-align: center;
+}
+
+.footer-inner__link-school {
+  text-align: right;
 }
